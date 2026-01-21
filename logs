@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class PBOicham {
+
+   public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        String validUsername = "icham";
+        String validPassword = "1234";
+        
+        
+        System.out.print("Username : ");
+        String username = input.nextLine();
+        
+        if(username.equals(validUsername)) {
+            System.out.print("Password : ");
+            String password = input.nextLine();
+            
+            if(password.equals(validPassword)) {
+                System.out.println("\nBerhasil login");
+                System.out.println("Selamat datang " + username + "\n");
+            } 
+            else {
+                System.out.println("\nPassword salah");
+            }
+        } 
+        else {
+
+            System.out.println("\nUsername tidak ada");
+        }
+        
+       
+    }
+}
